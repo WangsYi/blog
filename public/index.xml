@@ -1,33 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet href="/feed_style.xsl" type="text/xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="https://www.rssboard.org/media-rss">
   <channel>
-    <title>Terminal</title>
-    <link>/</link>
-    <description>Recent content on Terminal</description>
+    <title>Wangs&#39; note</title>
+    <link>https://blog.wangsyi.men/</link>
+    <description>Recent content on Wangs&#39; note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2023 03:37:26 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 05 Apr 2023 03:37:26 +0800</lastBuildDate><atom:link href="https://blog.wangsyi.men/index.xml" rel="self" type="application/rss+xml" /><icon>https://blog.wangsyi.men/img/icon.svg</icon>
+    
+    
     <item>
       <title>Clash配置Hysteria协议（Windows/MacOS）</title>
-      <link>/tutorials/vpn/clash-config/</link>
+      <link>https://blog.wangsyi.men/tutorials/vpn/clash-config/</link>
       <pubDate>Wed, 05 Apr 2023 03:37:26 +0800</pubDate>
       
-      <guid>/tutorials/vpn/clash-config/</guid>
-      <description>Clash配置Hysteria协议（Windows/MacOS） 由于服务器可能被盯上，尤其在开会的过程中，v2ray、trojan协议端口被封的太过频繁，把协议切换为了hysteria，使用了udp，速度快，且能够动态的改变端口，一定程度能够防封。
-同时，原v2rayN和v2rayNG客户端对hysteria协议支持不好，配置较复杂，把客户端统一切换到了clash系列，包括路由器使用OpenClash、Windows/Mac使用clash verge(比较clash for windows更简洁)、安卓使用Clash.Meta、苹果待定（需要外区购买app）。
-Windows/Mac/Linux 下载clash-verge,安装或解压 https://github.com/zzzgydi/clash-verge/releases 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge) 按照上图标注顺序进行设置 更改界面语言 修改Clash内核为Clash.Meta 打开系统代理 可选：打开后，其他局域网中的机器可以无需安装第三方软件，直接设置系统代理为本机即可进行科学上网 可选：本机代理服务器的端口，有软件或局域网机器需要手动设置代理时端口填写该端口 可选：默认走的http代理模式，某些软件，如终端、游戏等不会走代理，开启该项后，会切换到类似虚拟网卡的模式，所有软件都会走Clash分流 导入配置文件 按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式
-导入配置
-可能出现的问题 如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开</description>
+      <guid>https://blog.wangsyi.men/tutorials/vpn/clash-config/</guid>
+      <description><![CDATA[<blockquote>
+<p>由于服务器可能被盯上，尤其在开会的过程中，v2ray、trojan协议端口被封的太过频繁，把协议切换为了hysteria，使用了udp，速度快，且能够动态的改变端口，一定程度能够防封。</p>
+<p>同时，原v2rayN和v2rayNG客户端对hysteria协议支持不好，配置较复杂，把客户端统一切换到了clash系列，包括路由器使用OpenClash、Windows/Mac使用clash verge(比较clash for windows更简洁)、安卓使用Clash.Meta、苹果待定（需要外区购买app）。</p>
+</blockquote>
+<h2 id="windowsmaclinux">Windows/Mac/Linux</h2>
+<h4 id="下载clash-verge安装或解压">下载clash-verge,安装或解压</h4>
+<ul>
+<li><a href="https://github.com/zzzgydi/clash-verge/releases">https://github.com/zzzgydi/clash-verge/releases</a></li>
+</ul>
+<h4 id="打开clash-vergeexemacos直接从菜单打开clash-verge">打开Clash Verge.exe(macOS直接从菜单打开Clash Verge)</h4>
+<p><img src="/vpn/clash-verge/clash_verge_2npqpv5cc9.png" alt=""></p>
+<blockquote>
+<h5 id="按照上图标注顺序进行设置">按照上图标注顺序进行设置</h5>
+<ol>
+<li>更改界面语言</li>
+<li>修改Clash内核为Clash.Meta</li>
+<li>打开系统代理</li>
+<li>可选：打开后，其他局域网中的机器可以无需安装第三方软件，直接设置系统代理为本机即可进行科学上网</li>
+<li>可选：本机代理服务器的端口，有软件或局域网机器需要手动设置代理时端口填写该端口</li>
+<li>可选：默认走的http代理模式，某些软件，如终端、游戏等不会走代理，开启该项后，会切换到类似虚拟网卡的模式，所有软件都会走Clash分流</li>
+</ol>
+</blockquote>
+<h4 id="导入配置文件">导入配置文件</h4>
+<p>按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式</p>
+<p><img src="/vpn/clash-verge/clash_verge_p9wluuj9bg.gif" alt=""></p>
+<p>导入配置</p>
+<h3 id="可能出现的问题">可能出现的问题</h3>
+<p>如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开</p>
+<p><img src="/vpn/clash-verge/%E7%B3%BB%E7%BB%9F%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86.png" alt=""></p>
+]]></description>
+      
     </item>
+    
+    
+    
+    
     
     <item>
       <title>my first posts</title>
-      <link>/posts/my-first-post/</link>
+      <link>https://blog.wangsyi.men/posts/my-first-post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/my-first-post/</guid>
-      <description>#12333333333333333</description>
+      <guid>https://blog.wangsyi.men/posts/my-first-post/</guid>
+      <description><![CDATA[<p>#12333333333333333</p>
+]]></description>
+      
     </item>
+    
+    
+    
     
   </channel>
 </rss>

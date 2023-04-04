@@ -2,31 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tutorials/vpn/clash-config/</loc>
+    <loc>https://blog.wangsyi.men/tutorials/vpn/clash-config/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://blog.wangsyi.men/tags/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://blog.wangsyi.men/tutorials/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/tutorials/</loc>
+    <loc>https://blog.wangsyi.men/tags/vpn/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/tags/vpn/</loc>
+    <loc>https://blog.wangsyi.men/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://blog.wangsyi.men/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+    <loc>https://blog.wangsyi.men/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
     <lastmod>2023-04-05T03:37:26+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://blog.wangsyi.men/categories/</loc>
   </url><url>
-    <loc>/posts/my-first-post/</loc>
+    <loc>https://blog.wangsyi.men/manifest/index.json</loc>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://blog.wangsyi.men/posts/my-first-post/</loc>
+  </url><url>
+    <loc>https://blog.wangsyi.men/posts/</loc>
+  </url><url>
+    <loc>https://blog.wangsyi.men/search/</loc>
   </url>
 </urlset>

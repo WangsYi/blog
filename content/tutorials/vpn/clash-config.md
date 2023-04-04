@@ -5,9 +5,6 @@ draft: false
 tags: ["vpn", "科学上网", "教程"]
 ---
 
-
-# Clash配置Hysteria协议（Windows/MacOS）
-
 > 由于服务器可能被盯上，尤其在开会的过程中，v2ray、trojan协议端口被封的太过频繁，把协议切换为了hysteria，使用了udp，速度快，且能够动态的改变端口，一定程度能够防封。
 > 
 > 同时，原v2rayN和v2rayNG客户端对hysteria协议支持不好，配置较复杂，把客户端统一切换到了clash系列，包括路由器使用OpenClash、Windows/Mac使用clash verge(比较clash for windows更简洁)、安卓使用Clash.Meta、苹果待定（需要外区购买app）。
