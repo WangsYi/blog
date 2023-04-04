@@ -1,7 +1,8 @@
 ---
 title: "Clash配置Hysteria协议（Windows/MacOS）"
 date: 2023-04-05T03:37:26+08:00
-draft: true
+draft: false
+tags: ["vpn", "科学上网", "教程"]
 ---
 
 
@@ -16,11 +17,6 @@ draft: true
 #### 下载clash-verge,安装或解压
 
 -   https://github.com/zzzgydi/clash-verge/releases
-
-下载有困难可以使用以下地址
-
--   macOS: [http://pan.wangs.cyou/f/qjhX/Clash.Verge\_1.3.0\_x64.dmg](http://pan.wangs.cyou/f/qjhX/Clash.Verge_1.3.0_x64.dmg)
--   Windows: [http://pan.wangs.cyou/f/pYfA/Clash.Verge\_1.3.0\_x64\_portable.zip](http://pan.wangs.cyou/f/pYfA/Clash.Verge_1.3.0_x64_portable.zip)
 
 #### 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge)
 
