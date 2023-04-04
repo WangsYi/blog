@@ -5,6 +5,34 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2023 03:37:26 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vpn</title>
+      <link>/tags/vpn/</link>
+      <pubDate>Wed, 05 Apr 2023 03:37:26 +0800</pubDate>
+      
+      <guid>/tags/vpn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>教程</title>
+      <link>/tags/%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Wed, 05 Apr 2023 03:37:26 +0800</pubDate>
+      
+      <guid>/tags/%E6%95%99%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>科学上网</title>
+      <link>/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</link>
+      <pubDate>Wed, 05 Apr 2023 03:37:26 +0800</pubDate>
+      
+      <guid>/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

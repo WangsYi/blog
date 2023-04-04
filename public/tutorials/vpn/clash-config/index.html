@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Clash配置Hysteria协议（Windows/MacOS） :: Terminal</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clash配置Hysteria协议（Windows/MacOS） 由于服务器可能被盯上，尤其在开会的过程中，v2ray、trojan协议端口被封的太过频繁，把协议切换为了hysteria，使用了udp，速度快，且能够动态的改变端口，一定程度能够防封。
+同时，原v2rayN和v2rayNG客户端对hysteria协议支持不好，配置较复杂，把客户端统一切换到了clash系列，包括路由器使用OpenClash、Windows/Mac使用clash verge(比较clash for windows更简洁)、安卓使用Clash.Meta、苹果待定（需要外区购买app）。
+Windows/Mac/Linux 下载clash-verge,安装或解压 https://github.com/zzzgydi/clash-verge/releases 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge) 按照上图标注顺序进行设置 更改界面语言 修改Clash内核为Clash.Meta 打开系统代理 可选：打开后，其他局域网中的机器可以无需安装第三方软件，直接设置系统代理为本机即可进行科学上网 可选：本机代理服务器的端口，有软件或局域网机器需要手动设置代理时端口填写该端口 可选：默认走的http代理模式，某些软件，如终端、游戏等不会走代理，开启该项后，会切换到类似虚拟网卡的模式，所有软件都会走Clash分流 导入配置文件 按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式
+导入配置
+可能出现的问题 如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorials/vpn/clash-config/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Clash配置Hysteria协议（Windows/MacOS） :: Terminal">
+<meta property="og:description" content="Clash配置Hysteria协议（Windows/MacOS） 由于服务器可能被盯上，尤其在开会的过程中，v2ray、trojan协议端口被封的太过频繁，把协议切换为了hysteria，使用了udp，速度快，且能够动态的改变端口，一定程度能够防封。
+同时，原v2rayN和v2rayNG客户端对hysteria协议支持不好，配置较复杂，把客户端统一切换到了clash系列，包括路由器使用OpenClash、Windows/Mac使用clash verge(比较clash for windows更简洁)、安卓使用Clash.Meta、苹果待定（需要外区购买app）。
+Windows/Mac/Linux 下载clash-verge,安装或解压 https://github.com/zzzgydi/clash-verge/releases 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge) 按照上图标注顺序进行设置 更改界面语言 修改Clash内核为Clash.Meta 打开系统代理 可选：打开后，其他局域网中的机器可以无需安装第三方软件，直接设置系统代理为本机即可进行科学上网 可选：本机代理服务器的端口，有软件或局域网机器需要手动设置代理时端口填写该端口 可选：默认走的http代理模式，某些软件，如终端、游戏等不会走代理，开启该项后，会切换到类似虚拟网卡的模式，所有软件都会走Clash分流 导入配置文件 按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式
+导入配置
+可能出现的问题 如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开" />
+<meta property="og:url" content="/tutorials/vpn/clash-config/" />
+<meta property="og:site_name" content="Clash配置Hysteria协议（Windows/MacOS）" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2023-04-05 03:37:26 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Wangs
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/tutorials/">Tutorials</a></li>
+        
+      
+        
+          <li><a href="/skills/">Shares</a></li>
+        
+      
+      
+        <ul class="menu__sub-inner">
+          <li class="menu__sub-inner-more-trigger">Show more ▾</li>
+
+          <ul class="menu__sub-inner-more hidden">
+            
+              
+                <li><a href="/posts/">Posts</a></li>
+              
+            
+          </ul>
+        </ul>
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/tutorials/">Tutorials</a></li>
+      
+    
+      
+        <li><a href="/skills/">Shares</a></li>
+      
+    
+      
+        <li><a href="/posts/">Posts</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorials/vpn/clash-config/">Clash配置Hysteria协议（Windows/MacOS）</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2023-04-05 
+      </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/vpn/">vpn</a>&nbsp;
+    
+    #<a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/">科学上网</a>&nbsp;
+    
+    #<a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="clash配置hysteria协议windowsmacos">Clash配置Hysteria协议（Windows/MacOS）<a href="#clash配置hysteria协议windowsmacos" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<blockquote>
+<p>由于服务器可能被盯上，尤其在开会的过程中，v2ray、trojan协议端口被封的太过频繁，把协议切换为了hysteria，使用了udp，速度快，且能够动态的改变端口，一定程度能够防封。</p>
+<p>同时，原v2rayN和v2rayNG客户端对hysteria协议支持不好，配置较复杂，把客户端统一切换到了clash系列，包括路由器使用OpenClash、Windows/Mac使用clash verge(比较clash for windows更简洁)、安卓使用Clash.Meta、苹果待定（需要外区购买app）。</p>
+</blockquote>
+<h2 id="windowsmaclinux">Windows/Mac/Linux<a href="#windowsmaclinux" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h4 id="下载clash-verge安装或解压">下载clash-verge,安装或解压<a href="#下载clash-verge安装或解压" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<ul>
+<li><a href="https://github.com/zzzgydi/clash-verge/releases">https://github.com/zzzgydi/clash-verge/releases</a></li>
+</ul>
+<h4 id="打开clash-vergeexemacos直接从菜单打开clash-verge">打开Clash Verge.exe(macOS直接从菜单打开Clash Verge)<a href="#打开clash-vergeexemacos直接从菜单打开clash-verge" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<p><img src="/vpn/clash-verge/clash_verge_2npqpv5cc9.png" alt=""></p>
+<blockquote>
+<h5 id="按照上图标注顺序进行设置">按照上图标注顺序进行设置<a href="#按照上图标注顺序进行设置" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h5>
+<ol>
+<li>更改界面语言</li>
+<li>修改Clash内核为Clash.Meta</li>
+<li>打开系统代理</li>
+<li>可选：打开后，其他局域网中的机器可以无需安装第三方软件，直接设置系统代理为本机即可进行科学上网</li>
+<li>可选：本机代理服务器的端口，有软件或局域网机器需要手动设置代理时端口填写该端口</li>
+<li>可选：默认走的http代理模式，某些软件，如终端、游戏等不会走代理，开启该项后，会切换到类似虚拟网卡的模式，所有软件都会走Clash分流</li>
+</ol>
+</blockquote>
+<h4 id="导入配置文件">导入配置文件<a href="#导入配置文件" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<p>按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式</p>
+<p><img src="/vpn/clash-verge/clash_verge_p9wluuj9bg.gif" alt=""></p>
+<p>导入配置</p>
+<h3 id="可能出现的问题">可能出现的问题<a href="#可能出现的问题" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开</p>
+<p><img src="/vpn/clash-verge/%E7%B3%BB%E7%BB%9F%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86.png" alt=""></p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

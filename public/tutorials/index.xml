@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Terminal</title>
-    <link>/</link>
-    <description>Recent content on Terminal</description>
+    <title>Tutorials on Terminal</title>
+    <link>/tutorials/</link>
+    <description>Recent content in Tutorials on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2023 03:37:26 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 03:37:26 +0800</lastBuildDate><atom:link href="/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clash配置Hysteria协议（Windows/MacOS）</title>
       <link>/tutorials/vpn/clash-config/</link>
@@ -18,15 +18,6 @@
 Windows/Mac/Linux 下载clash-verge,安装或解压 https://github.com/zzzgydi/clash-verge/releases 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge) 按照上图标注顺序进行设置 更改界面语言 修改Clash内核为Clash.Meta 打开系统代理 可选：打开后，其他局域网中的机器可以无需安装第三方软件，直接设置系统代理为本机即可进行科学上网 可选：本机代理服务器的端口，有软件或局域网机器需要手动设置代理时端口填写该端口 可选：默认走的http代理模式，某些软件，如终端、游戏等不会走代理，开启该项后，会切换到类似虚拟网卡的模式，所有软件都会走Clash分流 导入配置文件 按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式
 导入配置
 可能出现的问题 如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开</description>
-    </item>
-    
-    <item>
-      <title>my first posts</title>
-      <link>/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/my-first-post/</guid>
-      <description>#12333333333333333</description>
     </item>
     
   </channel>
