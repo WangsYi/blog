@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "Wangs' note",
-  "short_name": "Wangs' note",
+  "name": "Wangs note",
+  "short_name": "Wangs note",
   "start_url": "/",
   "display": "standalone",
   
