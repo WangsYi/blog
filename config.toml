@@ -1,6 +1,6 @@
 # baseURL = 'https://blog.wangsyi.men'
 languageCode = 'zh-CN'
-title = "Wangs note"
+title = "Wangs' note"
 theme = "hugo-ficurinia"
 [menu]
 # [[menu.main]]
