@@ -1,4 +1,4 @@
-baseURL = 'https://blog.wangsyi.men'
+# baseURL = 'https://blog.wangsyi.men'
 languageCode = 'zh-CN'
 title = "Wangs note"
 theme = "hugo-ficurinia"
