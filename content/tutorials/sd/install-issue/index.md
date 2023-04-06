@@ -20,7 +20,7 @@ No module 'xformers'. Proceeding without it
 ```
 
 解决：
-```
+```bat
 # 升级python或者某些情况会出现，需要在web-ui.bat(linux为sh)中添加启动参数 '--reinstall-xformers --xformers'
 
 # 原
@@ -39,7 +39,7 @@ exit /b
 ## 运行时卡在`DiffusionWrapper has 859.52 M params.`
 
 解决：
-```
+```python
 # 找到venv\Lib\site-packages\huggingface_hub\file_download.py文件中下面部分代码
     # From now on, etag and commit_hash are not None.
     assert etag is not None, "etag must have been retrieved from server"
@@ -49,7 +49,7 @@ exit /b
 ```
 问题原因是etag有特殊自符\"
 解决方法是，先用print(etag)打印出卡住的etag值，例如我的打印出来是类似`/("xxxxxxxxxxxxx`，引号前面不合法，截去，最后修改为
-```
+```python
     # From now on, etag and commit_hash are not None.
     assert etag is not None, "etag must have been retrieved from server"
     assert commit_hash is not None, "commit_hash must have been retrieved from server"
