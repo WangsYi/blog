@@ -17,7 +17,7 @@ tags: ["vpn", "科学上网", "教程"]
 
 #### 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge)
 
-![](/vpn/clash-verge/clash_verge_2npqpv5cc9.png)
+![](/static/images/vpn/clash-verge/clash_verge_2npqpv5cc9.png)
 
 > ##### 按照上图标注顺序进行设置
 > 
@@ -32,7 +32,7 @@ tags: ["vpn", "科学上网", "教程"]
 
 按图导入配置文件，并点击选择需要使用的节点，另外，在代理标签页可以修改全局/规则代理模式
 
-![](/vpn/clash-verge/clash_verge_p9wluuj9bg.gif)
+![](/static/images/vpn/clash-verge/clash_verge_p9wluuj9bg.gif)
 
 导入配置
 
@@ -40,4 +40,4 @@ tags: ["vpn", "科学上网", "教程"]
 
 如果配置完了不能使用，可以查看系统网络设置中代理有没有开启，端口正不正确，如果不正确，可以手动修改，或者在Clash中，将系统代理选项关掉再打开
 
-![](/vpn/clash-verge/系统网络代理.png)
+![](/static/images/vpn/clash-verge/系统网络代理.png)
