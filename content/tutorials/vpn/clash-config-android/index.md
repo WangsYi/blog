@@ -7,9 +7,9 @@ tags: ["vpn", "科学上网"]
 
 ## 下载ClashMetaForAndroid并安装
 
-F-Droid
+- F-Droid
 [https://f-droid.org/packages/com.github.metacubex.clash.meta/](https://f-droid.org/packages/com.github.metacubex.clash.meta/)
-Github
+- Github
 [https://github.com/MetaCubeX/ClashMetaForAndroid/releases](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)
 
 ## 配置文件导入
