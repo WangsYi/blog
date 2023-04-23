@@ -26,7 +26,7 @@ theme = "hugo-ficurinia"
     author = "Wangs"
     description = "Wangs' note"  # this will be added as metadata
 
-    posts = "tutorials"  # content directory where to find home page posts; default searches in "posts" and "post"
+    posts = "/"  # content directory where to find home page posts; default searches in "posts" and "post"
     showPostsLink = false  # show or hide the link to the simple post list
     extraContentDirs = []  # other content directories to render similarly to the home page
     showcaseDir = "showcase"  # create a content directory that shows a special showcase section in the home page
