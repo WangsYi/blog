@@ -12,6 +12,8 @@ tags: ["vpn", "科学上网", "clash"]
 - Github
 [https://github.com/MetaCubeX/ClashMetaForAndroid/releases](https://github.com/MetaCubeX/ClashMetaForAndroid/releases)
 
+> tips: 如果没有代理，上不去github的话，尝试把github.com改成kgithub.com，或者使用其他国内github镜像
+
 ## 配置文件导入
 - 点击配置
 ![点击配置](01.png)

@@ -15,6 +15,9 @@ tags: ["vpn", "科学上网", "clash"]
 
 -   https://github.com/zzzgydi/clash-verge/releases
 
+> tips: 如果没有代理，上不去github的话，尝试把github.com改成kgithub.com，或者使用其他国内github镜像
+
+
 #### 打开Clash Verge.exe(macOS直接从菜单打开Clash Verge)
 
 ![](clash_verge_2npqpv5cc9.png)
