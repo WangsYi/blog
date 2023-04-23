@@ -8,13 +8,18 @@ theme = "hugo-ficurinia"
 #   pageRef = '/'
 #   weight = 10
 [[menu.main]]
+  name = 'Dev'
+  pageRef = '/skills'
+  weight = 10
+[[menu.main]]
   name = 'Tutorials'
   pageRef = '/tutorials'
-  weight = 10
+  weight = 20
 [[menu.main]]
   name = 'Posts'
   pageRef = '/posts'
-  weight = 20
+  weight = 30
+
 
 
 [params]
