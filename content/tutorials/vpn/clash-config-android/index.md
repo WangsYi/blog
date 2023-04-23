@@ -2,7 +2,7 @@
 title: "Clash配置Hysteria协议（Android）"
 date: 2023-04-06T14:13:26+08:00
 draft: false
-tags: ["vpn", "科学上网"]
+tags: ["vpn", "科学上网", "clash"]
 ---
 
 ## 下载ClashMetaForAndroid并安装
