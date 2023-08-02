@@ -15,3 +15,8 @@ winget install tssh
 ```
 
 3. 运行tssh选择连接的终端
+
+- 直接`tssh`会列出终端列表
+- 也可以以ssh的使用方式来使用tssh:`tssh root@10.1.1.1`
+
+连接后就可以使用rz或者sz来快捷发送文件了
